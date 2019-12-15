@@ -7,7 +7,7 @@ import { incrementAction, decrementAction, updateValueAction } from './reducers/
 import { selectValue } from './reducers/selectors';
 
 const store = createStore(counter)
-const rootEl = document.getElementById('root')
+const rootElement = document.getElementById('root')
 
 const render = () => ReactDOM.render(
   <Counter
@@ -16,7 +16,7 @@ const render = () => ReactDOM.render(
     onDecrement={() => store.dispatch(decrementAction())}
     onUpdateValue={(value) => store.dispatch(updateValueAction(value))}
   />,
-  rootEl
+  rootElement
 )
 
 render()

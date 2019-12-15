@@ -49,8 +49,8 @@ class Counter extends Component {
         <button onClick={this.incrementAsync}>
           Increment async
         </button>
-        <br/>
-        <input value={inputValue} onChange={(e) => this.setState({ inputValue: e.target.value })}/>
+        <br />
+        <input value={inputValue} onChange={(e) => this.setState({ inputValue: e.target.value })} />
         <button onClick={this.submitValue}>
           Submit value
         </button>
