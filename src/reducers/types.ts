@@ -34,4 +34,8 @@ interface ErrorAction {
   payload: ErrorPayload,
 }
 
-export type CounterActionsType = IncrementAction | DecrementAction | UpdateAction | ErrorAction;
+export type CounterActionsType =
+  IncrementAction |
+  DecrementAction |
+  UpdateAction |
+  ErrorAction;
